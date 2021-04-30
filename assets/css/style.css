@@ -10,13 +10,18 @@
 
 :root {
   --white: #fff;
-  --primary-hdrftr-bkgnd: rgb(91, 119, 119);
-  --primary-hdrftr-clr: cyan;
-  --primary-bkgnd: cyan;
-  --primary-font-clr: rgb(8, 8, 59);
-  --content-bkgnd: rgb(209, 209, 226);
+  /* --primary-hdrftr-bkgnd: rgb(91, 119, 119); */
+  /* --primary-hdrftr-clr: cyan; */
+  /* --primary-bkgnd: cyan; */
+  --content-bkgnd:  white; /* rgb(209, 209, 226); */
   /* You can use it with any value that is repeated throughout the sheet */
   --border-radius: 30px;
+
+  /* Changing to a lime green theme: */
+  --primary-hdrftr-bkgnd: #dce775; /* #e6ee9c #dce775 */
+  --primary-hdrftr-clr: #388e3c;
+  --primary-bkgnd: #f0f4c3;
+  --content-bkgnd: #f9fbe7;
 }
 
 * {
@@ -35,7 +40,7 @@ body {
 header {
   padding: 24px;
   text-align: left;
-  color: var(--primary-hdrftr-clr); /*var(--primary-font-clr);*/
+  color: var(--primary-hdrftr-clr);
   background: var(--primary-hdrftr-bkgnd); /* #13293d; */
 }
 
@@ -54,14 +59,14 @@ header {
 }
 
 .work-img-label {
-  color: var(--primary-hdrftr-clr); /*  white; */
-  background-color: var(--primary-hdrftr-bkgnd); /* blue; */
+  color: var(--primary-hdrftr-clr);
+  background-color: var(--primary-hdrftr-bkgnd);
   position: absolute;
   top: -90px;
-  width: auto;
+  /* width: auto; */
   left: 25px;
   padding: 10px;  
-  width: 150px;
+  width: 200px;
   text-align: center;
 }
 
@@ -110,7 +115,7 @@ header ul li {
 }
 
 header ul li a {
-  color: var(--primary-hdrftr-clr); /*var(--primary-font-clr);*/
+  color: var(--primary-hdrftr-clr);
 }
 
 /* ------------------------------------------------------------------------------------------------- */
@@ -140,12 +145,13 @@ main article section h2 {
   font-size: 36px;
   width: 25%;
   min-width: 25%;
-  border-right: 3px solid var(--primary-hdrftr-bkgnd); /* blue; */
+  border-right: 3px solid var(--primary-hdrftr-bkgnd);
+  color: white; /* #43a047; */
 }
 
 .main-aside {
   /* flex: 1; */
-  color: black;
+  color: #43a047; /*  black; */
   background-color: var(--primary-bkgnd); /*#dce0d9;*/
   padding: 10px;
   text-align: right;
@@ -246,6 +252,11 @@ footer {
   text-align: center;
 }
 
+#adobe-dc-view {
+  height: 360px;
+  width: 500px;
+}
+
 /* 
 What does the flex-direction property define?
 It defines in which direction the container wants to stack the flex items
@@ -279,7 +290,12 @@ We are telling the main body and navbar to stack vertically in a column
   .work-img-label {
     top: -30px;
     font-size: 10px;
-    width: auto;
+    width: 100px;
     padding: 2px;
   }
+  
+  #adobe-dc-view {
+    width: auto; /* 200px; */
+  }
+
 }
