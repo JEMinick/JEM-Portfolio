@@ -81,7 +81,7 @@ p {
    padding: 10px;
    /* color: white; */
    /* background-color: blue; */
-   color: darkblue; /* black; */
+   color: black; /*  darkblue black; */
    background-color: var(--content-bkgnd);
 }
 
