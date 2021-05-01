@@ -9,7 +9,7 @@
    A landing page which hi-lights the relative information associated to James E. Minick
 
 ## Page preview:
-![Screen shot:](./assets/images/JEM-Portfolio.PNG?raw=true)
+![Screen shot:](./assets/images/JEM-Portfolio(v2).PNG?raw=true)
 
 # License
 © 2021 JEM Services, LLC
