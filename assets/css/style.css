@@ -1,10 +1,11 @@
 /* Font-Awesome provides the proper graphics found on the footer */
 /* which includes eMail, Facebook, Twitter and LinkedIn: */
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
 .fa {
 	font-size: 36pt;
 	text-decoration: none;
-	color: white;
+	color: var(--primary-hdrftr-clr); /* white; */
 	letter-spacing: 24px;
 }
 
