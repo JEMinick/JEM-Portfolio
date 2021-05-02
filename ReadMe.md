@@ -12,4 +12,5 @@
 ![Screen shot:](./assets/images/JEM-Portfolio(v2).PNG?raw=true)
 
 # License
-© 2021 JEM Services, LLC
+Copyright © 2021 James E. Minick
+
