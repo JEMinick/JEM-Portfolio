@@ -20,6 +20,7 @@
 
   /* Changing to a lime green theme: */
   --primary-hdrftr-bkgnd: #dce775; /* #e6ee9c #dce775 */
+  --primary-hdrftr-line-bkgnd: #b3c03e; /* #e6ee9c #dce775 */
   --primary-hdrftr-clr: #388e3c;
   --primary-bkgnd: #f0f4c3;
   --content-bkgnd: #f9fbe7;
@@ -42,13 +43,12 @@ header {
   padding: 24px;
   text-align: left;
   color: var(--primary-hdrftr-clr);
-  background: var(--primary-hdrftr-bkgnd); /* #13293d; */
+  background: var(--primary-hdrftr-bkgnd);
 }
 
 .img-text {
   font-size: 24px;
   color: black;
-  /* background-color: white; */
   text-align: left;
   margin-top: -90px;
   margin-left: 20px;
@@ -64,7 +64,6 @@ header {
   background-color: var(--primary-hdrftr-bkgnd);
   position: absolute;
   top: -90px;
-  /* width: auto; */
   left: 25px;
   padding: 10px;  
   width: 200px;
@@ -91,22 +90,24 @@ p {
 
 header h1 {
   display: inline-block;
-  font-size: 24px;
+  font-size: 36px;
   max-width: 40%;
 }
 
 header h1 img {
   flex-direction: row;
   max-width: 30%;
+  border-radius: 1rem;
 }
 
-header ul {
+/* header nav ul { */
+nav  {
   padding-top: 5px;
   margin-top: 20px;
   margin-right: 20px;
   float: right;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
+  font-size: 36px;
   list-style-type: none;
   color: var(--primary-hdrftr-clr);
 }
@@ -246,7 +247,7 @@ footer {
   padding: 10px;
   color: var(--primary-hdrftr-bkgnd);
   background:  var(--primary-hdrftr-bkgnd);
-  width: 75%;
+  /* width: 75%; */
 }
 
 .footer-icons {
@@ -265,9 +266,20 @@ It defines in which direction the container wants to stack the flex items
 What is it doing here? 
 We are telling the main body and navbar to stack vertically in a column
 */
-@media screen and (max-width: 625px) {
-  main,
+@media screen and (max-width: 1024px) {
+  header h1 {
+    font-size: 20px;
+  }
   nav {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .fa {
+    font-size: 28pt;
+  }  
+  main {
     flex-direction: column;
   }
   header {
@@ -275,15 +287,16 @@ We are telling the main body and navbar to stack vertically in a column
     text-align: center;
   }
   header h1 {
-    /* display: inline-block; */
-    font-size: 18px;
+    font-size: 14px;
     max-width: 90%;
   }
-  header ul {
+  /* header ul { */
+  nav {
     float: none;
+    font-size: 14px;
     margin-top: 10px;
-    border-top: 1px solid white;
-    border-left: 2px solid white;
+    border-top: 2px solid var(--primary-hdrftr-line-bkgnd);
+    border-left: 2px solid var(--primary-hdrftr-line-bkgnd);
   }
   
   main article section h2 {
